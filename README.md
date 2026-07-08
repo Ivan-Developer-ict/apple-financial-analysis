@@ -29,7 +29,7 @@ para identificar patrones de ventas por director y correlación con ratings.
 - Merge de DataFrames (equivalente a SQL JOIN)
 - Estadísticas descriptivas con `.describe()` y `.corr()`
 - Visualizaciones: barras, scatter plot, heatmap de correlación
-- Análisis de mercados doméstico vs internacional
+- Análisis de mercados (doméstico vs internacional)
 
 ---
 
@@ -48,8 +48,7 @@ para identificar patrones de ventas por director y correlación con ratings.
 
 ```
 📦 data-analytics-portfolio
- ┣ 📓 Report_Analysis.ipynb   ← EDA completo (autocontenido)
- ┣ 📊 XLOOKUP_CLAUDE.xlsx     ← Dashboard Excel (XLOOKUP + Pivot Tables)
+ ┣ 📓 Report_Analysis.ipynb
  ┗ 📄 README.md
 ```
 
@@ -59,7 +58,7 @@ para identificar patrones de ventas por director y correlación con ratings.
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+git clone https://github.com/Ivan-Developer-ict/data_science_projects.git
 
 # 2. Instalar dependencias
 pip install pandas matplotlib jupyter
@@ -74,8 +73,8 @@ jupyter notebook Report_Analysis.ipynb
 
 ## 📬 Contacto
 
-**LinkedIn:** [tu-perfil](https://linkedin.com/in/tu-perfil)  
-**Email:** tu@email.com
+**LinkedIn:** [Iván Peña](https://www.linkedin.com/in/iv%C3%A1n-pe%C3%B1a)
+**Email:** investmentsandbusinessivan@gmail.com
 
 ---
 
