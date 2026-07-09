@@ -103,9 +103,6 @@ cd apple-financial-analysis
 # 2. Instalar dependencias
 pip install pandas matplotlib jupyter
 
-# 3. Abrir el notebook
-jupyter notebook notebooks/EDA_Apple.ipynb
-```
 
 > **Nota:** Coloca el dataset en `data/raw/` antes de ejecutar el notebook.
 
