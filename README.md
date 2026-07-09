@@ -3,7 +3,7 @@
 > **Exploratory Data Analysis** sobre 45+ años de datos financieros de Apple Inc.  
 > Stack: Python · pandas · matplotlib · SQL · Excel
 
-![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
 ![pandas](https://img.shields.io/badge/pandas-2.0-150458?logo=pandas)
 ![Status](https://img.shields.io/badge/Status-En%20desarrollo-yellow)
 ![License](https://img.shields.io/badge/License-MIT-green)
