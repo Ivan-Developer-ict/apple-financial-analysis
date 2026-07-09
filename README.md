@@ -1,81 +1,122 @@
-# 📊 Data Analytics Portfolio
+# 🍎 Apple Inc. Financial Analysis (1980–2026)
 
-> Junior Data Analyst | SQL · Python · Excel · pandas · matplotlib
+> **Exploratory Data Analysis** sobre 45+ años de datos financieros de Apple Inc.  
+> Stack: Python · pandas · matplotlib · SQL · Excel
 
----
-
-## 👋 Sobre mí
-
-Analista de datos en formación con enfoque en extracción de insights de negocio
-a partir de datos estructurados. Experiencia práctica en SQL, Python (pandas,
-matplotlib) y Excel avanzado (XLOOKUP, SUMIFS, Tablas Dinámicas).
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![pandas](https://img.shields.io/badge/pandas-2.0-150458?logo=pandas)
+![Status](https://img.shields.io/badge/Status-En%20desarrollo-yellow)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
-## 🗂️ Proyectos
+## 📌 Objetivo del Proyecto
 
-### 🎬 [EDA — Dataset de Películas](./Report_Analysis.ipynb)
+Analizar el rendimiento financiero histórico de Apple Inc. para identificar:
 
-**Herramientas:** Python · pandas · matplotlib  
-**Descripción:** Análisis exploratorio completo sobre un dataset de 10 películas
-para identificar patrones de ventas por director y correlación con ratings.
-
-**Key Insights:**
-- 🏆 Christopher Nolan lidera en ventas totales con **$2,693M** acumulados
-- 📈 Correlación Rating-Ventas de **0.62** (moderada-alta)
-- 🌍 El mercado internacional supera al doméstico (**$3,575M vs $2,881M**)
-
-**Técnicas aplicadas:**
-- Merge de DataFrames (equivalente a SQL JOIN)
-- Estadísticas descriptivas con `.describe()` y `.corr()`
-- Visualizaciones: barras, scatter plot, heatmap de correlación
-- Análisis de mercados (doméstico vs internacional)
+- 📈 Tendencias de revenue por línea de producto (iPhone, Mac, Services, iPad, Wearables)
+- 💹 Correlación entre precio de acción y métricas financieras trimestrales
+- 📅 Estacionalidad: ¿qué trimestre fiscal genera más revenue históricamente?
+- 🌍 Evolución del mix de productos en los últimos 10 años
 
 ---
 
-## 🛠️ Stack Técnico
-
-| Herramienta | Nivel | Uso |
-|---|---|---|
-| SQL | Intermedio | Queries complejas: JOINs, GROUP BY, HAVING, subconsultas |
-| Python / pandas | Básico-Intermedio | EDA, limpieza, agrupaciones, merge |
-| matplotlib | Básico | Visualizaciones de negocio |
-| Excel | Intermedio | XLOOKUP, SUMIFS, COUNTIFS, Tablas Dinámicas, Dashboards |
-
----
-
-## 📁 Estructura del Repositorio
+## 🗂️ Estructura del Repositorio
 
 ```
-📦 data-analytics-portfolio
- ┣ 📓 Report_Analysis.ipynb
+📦 apple-financial-analysis/
+ ┣ 📁 data/
+ ┃ ┣ 📁 raw/              ← Dataset original sin modificar (Kaggle)
+ ┃ ┗ 📁 processed/        ← Datos limpios listos para análisis
+ ┣ 📁 notebooks/
+ ┃ ┗ 📓 EDA_Apple.ipynb   ← Análisis exploratorio completo
+ ┣ 📁 excel/
+ ┃ ┗ 📊 Dashboard_Apple.xlsx ← Dashboard interactivo
+ ┣ 📁 sql/
+ ┃ ┗ 📄 queries.sql        ← Queries de extracción y análisis
+ ┣ 📁 outputs/
+ ┃ ┗ 📁 charts/            ← Visualizaciones exportadas
  ┗ 📄 README.md
 ```
 
 ---
 
-## 🚀 Cómo ejecutar el notebook
+## 📊 Dataset
+
+| Atributo | Detalle |
+|---|---|
+| **Fuente** | [Kaggle — Apple Financial Dataset](https://www.kaggle.com) |
+| **Período** | 1980 – 2026 |
+| **Frecuencia** | Diaria (precios) + Trimestral (financiero) |
+| **Columnas** | 85 variables (precios, indicadores técnicos, revenue por segmento) |
+| **Filas** | 11,000+ registros diarios |
+
+**Columnas clave utilizadas:**
+```
+date, close, volume,
+revenue_iphone, revenue_mac, revenue_services,
+revenue_wearables_other, revenue_ipad, revenue_total,
+fiscal_year, fiscal_quarter, rsi_14
+```
+
+---
+
+## 🔍 Preguntas de Negocio
+
+```
+1. ¿Qué línea de producto lidera el revenue de Apple en los últimos 10 años?
+2. ¿Existe correlación entre el precio de cierre y el revenue trimestral?
+3. ¿Qué trimestre fiscal genera históricamente más revenue?
+```
+
+---
+
+## 📈 Key Insights
+
+> ⚠️ *Sección en desarrollo — se actualizará al completar el análisis*
+
+- 📱 **iPhone dominance:** el iPhone representa históricamente el ~50%+ del revenue total
+- 📦 **Services crecimiento:** el segmento de servicios ha crecido consistentemente desde 2015
+- 📅 **Q1 fiscal (oct-dic):** históricamente el trimestre más fuerte por temporada navideña
+
+---
+
+## 🛠️ Stack Técnico
+
+| Herramienta | Uso en el proyecto |
+|---|---|
+| **Python / pandas** | Carga, limpieza, transformación y análisis de datos |
+| **matplotlib** | Visualizaciones de tendencias y correlaciones |
+| **SQL** | Queries de extracción y análisis agregado |
+| **Excel** | Dashboard interactivo con Tablas Dinámicas y XLOOKUP |
+| **Git / GitHub** | Control de versiones y documentación |
+
+---
+
+## 🚀 Cómo Ejecutar
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/Ivan-Developer-ict/data_science_projects.git
+git clone https://github.com/Ivan-Developer-ict/apple-financial-analysis.git
+cd apple-financial-analysis
 
 # 2. Instalar dependencias
 pip install pandas matplotlib jupyter
 
 # 3. Abrir el notebook
-jupyter notebook Report_Analysis.ipynb
+jupyter notebook notebooks/EDA_Apple.ipynb
 ```
 
-> **Nota:** El notebook es autocontenido — no requiere archivos externos.
+> **Nota:** Coloca el dataset en `data/raw/` antes de ejecutar el notebook.
 
 ---
 
 ## 📬 Contacto
 
-**LinkedIn:** [Iván Peña](https://www.linkedin.com/in/iv%C3%A1n-pe%C3%B1a)
+**LinkedIn:** [Ivan Peña](https://www.linkedin.com/in/iv%C3%A1n-pe%C3%B1a)  
+**GitHub:** [@Ivan-Developer-ict](https://github.com/Ivan-Developer-ict)  
 **Email:** investmentsandbusinessivan@gmail.com
 
 ---
 
-*En constante aprendizaje. Actualmente profundizando en Python para análisis de datos.*
+⭐ **Si este proyecto te resulta útil, dale una estrella en GitHub**
